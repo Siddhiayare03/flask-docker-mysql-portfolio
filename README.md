@@ -1,10 +1,10 @@
-# 🚀 Flask Portfolio Website - DevOps Project
+# Flask Portfolio Website - DevOps Project
 
 A full-stack portfolio website built using Flask and MySQL, containerized with Docker, deployed on AWS EC2, and automated using a Jenkins CI/CD pipeline.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates an end-to-end DevOps workflow by building, containerizing, deploying, and automating a Flask web application.
 
@@ -12,7 +12,7 @@ The portfolio website allows visitors to submit messages through a contact form,
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - Flask
@@ -27,7 +27,7 @@ The portfolio website allows visitors to submit messages through a contact form,
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive Portfolio Website
 - Contact Form
@@ -39,7 +39,7 @@ The portfolio website allows visitors to submit messages through a contact form,
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 <img width="1536" height="1024" alt="ChatGPT Image Jul 1, 2026, 12_12_27 AM" src="https://github.com/user-attachments/assets/01e66999-0df8-4b5f-aa3d-ed493e43e222" />
 
@@ -87,7 +87,7 @@ The portfolio website allows visitors to submit messages through a contact form,
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 flask-docker-mysql-portfolio/
@@ -108,7 +108,7 @@ flask-docker-mysql-portfolio/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 git clone <https://github.com/Siddhiayare03/flask-docker-mysql-portfolio>
@@ -126,7 +126,7 @@ http://localhost:5000
 
 ---
 
-## ⚙️ CI/CD Workflow
+## CI/CD Workflow
 
 1. Developer pushes code to GitHub
 2. Jenkins pulls the latest code
@@ -136,7 +136,7 @@ http://localhost:5000
 
 ---
 
-## 📚 Skills Demonstrated
+## Skills Demonstrated
 
 - Docker
 - Docker Compose
@@ -148,74 +148,74 @@ http://localhost:5000
 - MySQL
 
 ---
-## 🚀 How to Run Locally
+## How to Run Locally
 
 1. Clone the Repository
-git clone https://github.com/Siddhiayare03/flask-docker-mysql-portfolio.git
+  git clone https://github.com/Siddhiayare03/flask-docker-mysql-portfolio.git
 
 2. Navigate to the Project Directory
-cd flask-docker-mysql-portfolio
+  cd flask-docker-mysql-portfolio
 
 3. Make sure Docker Desktop is running
 
-Verify Docker installation:
+  Verify Docker installation:
 
-docker --version
+  docker --version
 
-Verify Docker Compose:
+  Verify Docker Compose:
 
-docker compose version
+  docker compose version
 
 4. Build and Start the Containers
-docker compose up --build -d
+  docker compose up --build -d
 
-This command will:
+  This command will:
 
-Build the Flask application image
-Pull the MySQL image (if not already available)
-Create both containers
-Create the Docker network
-Create the MySQL volume
-Start the application
+  Build the Flask application image
+  Pull the MySQL image (if not already available)
+  Create both containers
+  Create the Docker network
+  Create the MySQL volume
+  Start the application
 
 5. Verify Running Containers
-docker ps
+  docker ps
 
-Expected containers:
-
-flask-app
-mysql-db
+  Expected containers:
+  
+  flask-app
+  mysql-db
 
 6. Open the Portfolio Website
 
-Open your browser and visit:
-
-http://localhost:5000
-
-If deployed on AWS EC2:
-
-http://<EC2-Public-IP>:5000
+  Open your browser and visit:
+  
+  http://localhost:5000
+  
+  If deployed on AWS EC2:
+  
+  http://<EC2-Public-IP>:5000
 
 7. Stop the Application
-docker compose down
-
-8. Rebuild After Code Changes
-
-If you make changes to the application:
-
-docker compose down
-docker compose up --build -d
+  docker compose down
+  
+  8. Rebuild After Code Changes
+  
+  If you make changes to the application:
+  
+  docker compose down
+  docker compose up --build -d
 
 9. View Container Logs 
 
-Flask logs:
+  Flask logs:
+  
+  docker logs flask-app
+  
+  MySQL logs:
+  docker logs mysql-db
 
-docker logs flask-app
-
-MySQL logs:
-docker logs mysql-db
-
-## 🚀 Future Improvements
+## Future Improvements
 
 - Kubernetes Deployment
 - Terraform Infrastructure
@@ -226,6 +226,6 @@ docker logs mysql-db
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Siddhi Ayare
