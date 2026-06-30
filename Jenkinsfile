@@ -3,25 +3,41 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                echo 'Checking out source code...'
                 checkout scm
             }
         }
 
-        stage('Build Docker Containers') {
+        stage('Build') {
             steps {
-                sh 'docker compose down'
+                sh 'docker compose down || true'
                 sh 'docker compose up --build -d'
             }
         }
 
-        stage('Verify Running Containers') {
+        stage('Verify') {
             steps {
                 sh 'docker ps'
             }
         }
 
+        stage('Health Check') {
+            steps {
+                sh 'sleep 10'
+                sh 'curl http://localhost:5000'
+            }
+        }
+
+    }
+
+    post {
+        success {
+            echo 'Deployment Successful!'
+        }
+
+        failure {
+            echo 'Deployment Failed!'
+        }
     }
 }
