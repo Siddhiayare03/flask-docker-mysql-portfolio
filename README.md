@@ -215,6 +215,8 @@ http://localhost:5000
   MySQL logs:
   docker logs mysql-db
 
+---
+
 ## Future Improvements
 
 - Kubernetes Deployment
