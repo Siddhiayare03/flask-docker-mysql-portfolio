@@ -151,7 +151,7 @@ http://localhost:5000
 ## How to Run Locally
 
 1. Clone the Repository
-  git clone https://github.com/Siddhiayare03/flask-docker-mysql-portfolio.git
+  git clone https://github.com/Siddhiayare03/two-tier-flask-project.git
 
 2. Navigate to the Project Directory
   cd flask-docker-mysql-portfolio
